@@ -22,7 +22,26 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-
+  - type: checkboxes
+    id: operating-system
+    attributes:
+      label: Operating System
+      description: What Operating System(s) have you experienced this bug on?
+      options:
+        - label: MacOS
+        - label: Windows
+    validations:
+      required: true
+  - type: checkboxes
+    id: architecture
+    attributes:
+      label: System Architecture
+      description: What system architectures have you experienced this bug on?
+      options:
+        - label: amd64 (x86_64)
+        - label: arm64
+    validations:
+      required: true
   - type: textarea
     id: bug-description
     attributes:
@@ -47,7 +66,7 @@ body:
       label: Noop Version
       description: What versions of Noop have you experienced this bug with?
       options:
-        - 0.9.33 (Default)
+        - label: 0.9.33 (Default)
     validations:
       required: true
   - type: dropdown
@@ -57,10 +76,10 @@ body:
       description: If using the web application, which browsers have you experiened this bug in?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - label: Firefox
+        - label: Chrome
+        - label: Safari
+        - label: Microsoft Edge
     validations:
       required: false
   - type: textarea
