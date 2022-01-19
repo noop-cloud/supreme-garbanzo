@@ -1,4 +1,5 @@
 name: 🐞 File a bug
+description: file a bug
 title: "[Bug]: "
 labels: ["bug", "triage"]
 assignees:
