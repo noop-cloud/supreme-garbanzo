@@ -76,7 +76,9 @@ body:
     id: bug-description
     attributes:
       label: Description
-      description: Please describe the bug with as much details as possible.
+      description: |
+       Please describe the bug with as much details as possible.
+       Feel free to attach screenshots, files or link to public gists for better triaging.
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
