@@ -22,43 +22,64 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-  - type: textarea
-    id: what-happened
+  - type: checkboxes
+    id: operating-system
     attributes:
-      label: What happened?
-      description: Please describe the bug (you can attach screenshots or other files to provide more details for the triage teams).
+      label: Operating System
+      description: What Operating System(s) have you experienced this bug on?
+      options:
+        - label: MacOS
+        - label: Windows
+    validations:
+      required: true
+  - type: checkboxes
+    id: architecture
+    attributes:
+      label: System Architecture
+      description: What system architectures have you experienced this bug on?
+      options:
+        - label: amd64 (x86_64)
+        - label: arm64
+    validations:
+      required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: Please describe the bug with as much details as possible.
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
       required: true
   - type: textarea
-    id: what-expected
+    id: expectation
     attributes:
-      label: What was expected
+      label: Expectation
       description: What did you expect to happen?
       placeholder: Tell us your expectation
       value: "I expected foo but received bar!"
     validations:
       required: true
-  - type: dropdown
-    id: what-versions
+  - type: checkboxes
+    id: affected-versions
     attributes:
-      label: Which version of Noop are you seeing this issue on?
-      multiple: true
+      label: Which Noop version(s) have you experienced this bug on?
       options:
         - 0.9.33 (Default)
     validations:
       required: true
   - type: dropdown
-    id: what-browsers
+    id: affected-browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What browsers does this bug occur in?
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
         - Microsoft Edge
+    validations:
+      required: false
   - type: textarea
     id: logs
     attributes:
