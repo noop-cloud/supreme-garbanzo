@@ -9,6 +9,11 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this feature request!
+  - type: markdown
+    attributes:
+      value: |
+        - Please review open issues labeled as `enhancements` to ensure your feature request is not a duplicate.
+        - For general questions, ideas and concerns that are not related to a feature request, visit our [discussions page](https://github.com/noop-cloud/supreme-garbanzo/discussions)
   - type: input
     id: contact
     attributes:

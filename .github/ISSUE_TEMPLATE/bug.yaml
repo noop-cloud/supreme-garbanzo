@@ -12,7 +12,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        - Please review open bugs in this repository to ensure your issue is not a duplicate.
+        - Please review open issues labeled as `bugs` to ensure your issue is not a duplicate.
+        - For general questions, ideas and concerns that are not related to a bug, visit our [discussions page](https://github.com/noop-cloud/supreme-garbanzo/discussions)
   - type: input
     id: contact
     attributes:
