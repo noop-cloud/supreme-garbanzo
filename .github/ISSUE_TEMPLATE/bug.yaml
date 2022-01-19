@@ -63,7 +63,8 @@ body:
   - type: checkboxes
     id: affected-versions
     attributes:
-      label: Which Noop version(s) have you experienced this bug on?
+      label: Noop Version
+      description: What versions of Noop have you experienced this bug with?
       options:
         - 0.9.33 (Default)
     validations:
@@ -71,7 +72,8 @@ body:
   - type: dropdown
     id: affected-browsers
     attributes:
-      label: What browsers does this bug occur in?
+      label: Affected Browsers
+      description: If using the web application, which browsers have you experiened this bug in?
       multiple: true
       options:
         - Firefox
