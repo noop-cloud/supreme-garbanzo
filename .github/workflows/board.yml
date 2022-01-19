@@ -1,0 +1,32 @@
+name: Auto Assign to Project
+
+on:
+  issues:
+    types: [opened, labeled]
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+jobs:
+  assign_one_project:
+    runs-on: ubuntu-latest
+    name: Assign to One Project
+    steps:
+
+
+    - name: Assign issues and pull requests with `bug` label to bug tracker
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      if: |
+        contains(github.event.issue.labels.*.name, 'bug') ||
+        contains(github.event.pull_request.labels.*.name, 'bug')
+      with:
+        project: 'https://github.com/noop-cloud/supreme-garbanzo/projects/2'
+        column_name: 'To do'
+
+    - name: Assign issues and pull requests with `enhancement` label to bug tracker
+      uses: srggrs/assign-one-project-github-action@1.2.1
+      if: |
+        contains(github.event.issue.labels.*.name, 'enhancement') ||
+        contains(github.event.pull_request.labels.*.name, 'enhancement')
+      with:
+        project: 'https://github.com/noop-cloud/supreme-garbanzo/projects/4'
+        column_name: 'To do'
