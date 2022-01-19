@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/noop-cloud/supreme-garbanzo/issues"
   },
-  "homepage": "https://github.com/noop-cloud/supreme-garbanzo#readme"
+  "homepage": "https://github.com/noop-cloud/supreme-garbanzo#readme",
+  "dependencies": {
+    "semantic-release": "^19.0.2"
+  }
 }
