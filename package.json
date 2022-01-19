@@ -11,13 +11,22 @@
     "url": "git+https://github.com/noop-cloud/supreme-garbanzo.git"
   },
   "release": {
-    "ci": true,
+    "ci": false,
     "dryRun": false,
-    "branches": ["main"],
+    "branches": [
+      "main"
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
-      "@semantic-release/github"
+      "@semantic-release/changelog",
+      "@semantic-release/prepare",
+      [
+        "@semantic-release/github",
+        {
+          "message": "chore(release): ${nextRelease.version}"
+        }
+      ]
     ]
   },
   "keywords": [
@@ -30,6 +39,7 @@
   },
   "homepage": "https://github.com/noop-cloud/supreme-garbanzo#readme",
   "dependencies": {
+    "@semantic-release/changelog": "^6.0.1",
     "semantic-release": "^19.0.2"
   }
 }
