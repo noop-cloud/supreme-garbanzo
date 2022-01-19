@@ -22,35 +22,38 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-  - type: checkboxes
-    id: operating-system
+  - type: dropdown
+    id: affected-os
     attributes:
-      label: Operating System(s)
-      description: What Operating System(s) have you experienced this bug on?
+      label: Affected Operating Systems
+      description: What Operating Systems have you experienced this bug on?
+      multiple: true
       options:
-        - label: MacOS
-        - label: Windows
+        - Windows
+        - MacOS
     validations:
-      required: true
-  - type: checkboxes
-    id: architecture
+      required: false
+  - type: dropdown
+    id: affected-arch
     attributes:
-      label: System Architecture
-      description: What system architectures have you experienced this bug on?
+      label: Affected Architecture
+      description: What machine architecture(s) have you experienced this bug on?
+      multiple: true
       options:
-        - label: amd64 (x86_64)
-        - label: arm64
+        - amd64
+        - arm64
     validations:
-      required: true
-  - type: checkboxes
+      required: false
+  - type: dropdown
     id: affected-versions
     attributes:
-      label: Noop Version
+      label: Affected Versions
       description: What versions of Noop have you experienced this bug with?
+      multiple: true
       options:
-        - label: 0.9.33 (Default)
+        - 0.9.33 (default)
     validations:
-      required: true
+      required: false
   - type: textarea
     id: bug-description
     attributes:
