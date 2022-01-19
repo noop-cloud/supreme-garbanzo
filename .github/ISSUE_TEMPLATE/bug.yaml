@@ -1,5 +1,5 @@
-name: File 🐞 Bug
-description: File a bug report
+name: File a 🐞 Bug in Noop
+description: File a bug in Noop Services
 title: "[Bug]: "
 labels: ["bug", "triage"]
 assignees:
