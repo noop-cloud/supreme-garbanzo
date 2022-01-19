@@ -10,6 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/noop-cloud/supreme-garbanzo.git"
   },
+  "release": {
+    "ci": true,
+    "dryRun": false,
+    "branches": ["main"],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ]
+  },
   "keywords": [
     "engagement"
   ],
