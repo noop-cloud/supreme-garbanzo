@@ -22,24 +22,24 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-  - type: checkboxes
+  - type: drowpdown
     id: operating-system
     attributes:
-      label: Operating System
+      label: Operating System(s)
       description: What Operating System(s) have you experienced this bug on?
       options:
-        - label: MacOS
-        - label: Windows
+        - MacOS
+        - Windows
     validations:
       required: true
-  - type: checkboxes
+  - type: dropdown
     id: architecture
     attributes:
       label: System Architecture
       description: What system architectures have you experienced this bug on?
       options:
-        - label: amd64 (x86_64)
-        - label: arm64
+        - amd64 (x86_64)
+        - arm64
     validations:
       required: true
   - type: checkboxes
