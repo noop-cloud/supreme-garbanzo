@@ -45,6 +45,19 @@ body:
     validations:
       required: false
   - type: dropdown
+    id: affected-browsers
+    attributes:
+      label: Affected Browsers
+      description: If using the web application, which browsers have you experiened this bug in?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+    validations:
+      required: false
+  - type: dropdown
     id: application-variant
     attributes:
       label:  Noop Variant
@@ -90,19 +103,6 @@ body:
       value: "I expected foo but received bar!"
     validations:
       required: true
-  - type: dropdown
-    id: affected-browsers
-    attributes:
-      label: Affected Browsers
-      description: If using the web application, which browsers have you experiened this bug in?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-    validations:
-      required: false
   - type: textarea
     id: logs
     attributes:
