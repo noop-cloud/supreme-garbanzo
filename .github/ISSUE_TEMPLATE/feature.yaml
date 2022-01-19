@@ -1,6 +1,6 @@
-name:  🔧 submit a feature request
+name:  🔧 feature request
 title: "[Feature]: "
-description: "submit a feature request"
+description: "request the team work on new feature"
 labels: ["enhancement", "feature", "review"]
 assignees:
   - noop-cloud/noop
