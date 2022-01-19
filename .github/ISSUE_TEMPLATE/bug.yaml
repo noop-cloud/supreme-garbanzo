@@ -76,9 +76,7 @@ body:
     id: bug-description
     attributes:
       label: Description
-      description: |
-       Please describe the bug with as much details as possible.
-       Feel free to attach screenshots, files or link to public gists for better triaging.
+      description: Please describe the bug with as much details as possible. Feel free to attach screenshots, files or link to public gists for better triaging.
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
@@ -108,8 +106,8 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: Logs
+      description: Please copy & paste any relevant log output. It will be automatically formatted into code, so no need for backticks.
       render: shell
   - type: checkboxes
     id: terms
