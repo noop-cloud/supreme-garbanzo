@@ -42,6 +42,15 @@ body:
         - label: arm64
     validations:
       required: true
+  - type: checkboxes
+    id: affected-versions
+    attributes:
+      label: Noop Version
+      description: What versions of Noop have you experienced this bug with?
+      options:
+        - label: 0.9.33 (Default)
+    validations:
+      required: true
   - type: textarea
     id: bug-description
     attributes:
@@ -60,15 +69,6 @@ body:
       value: "I expected foo but received bar!"
     validations:
       required: true
-  - type: checkboxes
-    id: affected-versions
-    attributes:
-      label: Noop Version
-      description: What versions of Noop have you experienced this bug with?
-      options:
-        - label: 0.9.33 (Default)
-    validations:
-      required: true
   - type: dropdown
     id: affected-browsers
     attributes:
@@ -76,10 +76,10 @@ body:
       description: If using the web application, which browsers have you experiened this bug in?
       multiple: true
       options:
-        - label: Firefox
-        - label: Chrome
-        - label: Safari
-        - label: Microsoft Edge
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
     validations:
       required: false
   - type: textarea
