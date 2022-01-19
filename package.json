@@ -1,0 +1,22 @@
+{
+  "name": "supreme-garbanzo",
+  "version": "1.0.0",
+  "description": "Noop Engagement Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noop-cloud/supreme-garbanzo.git"
+  },
+  "keywords": [
+    "engagement"
+  ],
+  "author": "aaron.samuel@rearc.io",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/noop-cloud/supreme-garbanzo/issues"
+  },
+  "homepage": "https://github.com/noop-cloud/supreme-garbanzo#readme"
+}
