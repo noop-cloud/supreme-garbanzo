@@ -39,6 +39,6 @@
   "homepage": "https://github.com/noop-cloud/supreme-garbanzo#readme",
   "dependencies": {
     "@semantic-release/changelog": "^6.0.1",
-    "semantic-release": "^19.0.2"
+    "semantic-release": "^19.0.3"
   }
 }
